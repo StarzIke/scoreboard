@@ -1,0 +1,134 @@
+:root {
+  --timer-color: #004853;
+  --text-color: #111827;
+  --contnent-color: #293340;
+  --secondary-color: #ef3b2f;
+  --line-color: #f1f1f1;
+}
+
+html {
+  font-family: "DM Sans";
+  line-height: 1.5;
+}
+
+body {
+  box-sizing: border-box !important;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit !important;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.score_board {
+  padding: 5rem;
+  text-align: center;
+}
+.score_title {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+#board_block {
+  width: 30rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--contnent-color);
+  position: relative;
+  min-height: 10rem;
+}
+.board_cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.board_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+}
+
+.start_btn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.strt_o{
+  position: relative;
+}
+
+.start_btn2 {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+ 
+}
+
+.team_cover {
+  display: inline-block;
+  margin: 0 auto;
+}
+.team {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--line-color);
+  margin: 1rem;
+}
+
+.score_cover {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.team_score {
+}
+
+#timer,
+#timer2 {
+  border: 5px solid var(--timer-color);
+  display: inline;
+  padding: 5px;
+  color: var(--timer-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+.btn_cover {
+  display: flex;
+  justify-content: center;
+}
+.stop_btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+}
